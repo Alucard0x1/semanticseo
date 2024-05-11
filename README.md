@@ -23,6 +23,11 @@ To use this template:
 ### Important
 Ensure that the server hosting your site is configured to serve AMP HTML pages correctly if you choose to use AMP elements.
 
+## Author
+
+- **Alucard0x1**
+  - **Contact**: [Telegram](https://t.me/Alucard0x1)
+
 ## License
 
 This project is open-sourced under the MIT license. Feel free to modify, distribute, or incorporate this template into your projects with proper attribution to the original author, Alucard0x1.
@@ -33,4 +38,4 @@ This project is open-sourced under the MIT license. Feel free to modify, distrib
 - AMP project for the `amp-youtube` integration scripts.
 - All image and content rights belong to their respective owners. Example images and URLs provided in the template are for demonstration purposes only.
 
-For more information and support, please visit the project's repository or contact the author directly at `contact@example.com`.
+For more information and support, please visit the project's repository or contact the author directly at [Telegram](https://t.me/Alucard0x1).
