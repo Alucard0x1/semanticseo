@@ -1,6 +1,7 @@
-# Universal SEO On-Page Structure
+# Universal SEO On-Page Structure Developed by Alucard0x1
 
-Enhance your website's visibility across search engines by adhering to W3C standards with this robust SEO On-Page template. Developed by Alucard0x1, this template incorporates essential SEO practices and modern web standards to ensure your content ranks well in search engines.
+Enhance your website's visibility across search engines by adhering to W3C standards with this robust SEO On-Page template. 
+This template incorporates essential SEO practices and modern web standards to ensure your content ranks well in search engines.
 
 ## Features
 
