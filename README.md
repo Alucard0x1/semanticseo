@@ -12,6 +12,10 @@ Enhance your website's visibility across search engines by adhering to W3C stand
 - **Structured Data**: Includes JSON-LD structured data snippet for better indexing and snippet visibility in search engines.
 - **External Resources**: Uses Font Awesome for icons and CDN-hosted stylesheets for faster page speed.
 
+## Preview
+
+![Semantic HTML Structure + SEO Onpage](https://raw.githubusercontent.com/Alucard0x1/semanticseo/main/Semantic%20HTML%20Structure%20%2B%20SEO%20Onpage..png)
+
 ## Usage
 
 To use this template:
