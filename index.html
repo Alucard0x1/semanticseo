@@ -12,39 +12,39 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.example.com/post">
-    <title>Short Title - Improve Your SEO</title>
-    <meta name="description" content="A brief description of the page content with relevant keywords for SEO.">
-    <meta name="keywords" content="SEO, optimization, improve, search engine">
+    <title id="seo-title">Short Title - Improve Your SEO</title>
+    <meta name="description" id="seo-description" content="A brief description of the page content with relevant keywords for SEO.">
+    <meta name="keywords" id="seo-keywords" content="SEO, optimization, improve, search engine">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <meta property="og:title" content="Short Title - Improve Your SEO" />
+    <meta property="og:title" id="og-title" content="Short Title - Improve Your SEO" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.example.com/post" />
-    <meta property="og:description" content="A brief description of the page content with relevant keywords for SEO." />
-    <meta property="og:image" content="https://www.example.com/image.jpg" />
+    <meta property="og:description" id="og-description" content="A brief description of the page content with relevant keywords for SEO." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1606787620429-1be9383799b5" />
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Short Title - Improve Your SEO">
-    <meta name="twitter:description" content="A brief description of the page content with relevant keywords for SEO.">
-    <meta name="twitter:image" content="https://www.example.com/image.jpg">
+    <meta name="twitter:title" id="twitter-title" content="Short Title - Improve Your SEO">
+    <meta name="twitter:description" id="twitter-description" content="A brief description of the page content with relevant keywords for SEO.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1606787620429-1be9383799b5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="manifest" href="/manifest.json">
     <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function() {
-          navigator.serviceWorker.register('/sw.js').then(function(registration) {
-            console.log('Service Worker registered with scope:', registration.scope);
-          }).catch(function(error) {
-            console.log('Service Worker registration failed:', error);
-          });
-        });
-      }
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js').then(function(registration) {
+                    console.log('Service Worker registered with scope:', registration.scope);
+                }).catch(function(error) {
+                    console.log('Service Worker registration failed:', error);
+                });
+            });
+        }
     </script>
-    <script type="application/ld+json">
+    <script type="application/ld+json" id="structured-data">
     {
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": "Short Title - Improve Your SEO",
         "description": "A brief description of the post with relevant keywords for SEO.",
-        "image": "https://www.example.com/image.jpg",
+        "image": "https://images.unsplash.com/photo-1606787620429-1be9383799b5",
         "author": {
             "@type": "Person",
             "name": "John Doe"
@@ -54,7 +54,7 @@
             "name": "Example Company",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://www.example.com/logo.png"
+                "url": "https://images.unsplash.com/photo-1606787620429-1be9383799b5"
             }
         },
         "mainEntityOfPage": {
@@ -69,17 +69,67 @@
     <style amp-custom>
         body { font-family: Arial, sans-serif; }
         header, footer { background-color: #f8f9fa; padding: 10px; text-align: center; }
-        article { margin: 20px; padding: 20px; background-color: #fff; border-radius: 8px; }
+        article { margin: 20px; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
         nav a { margin-right: 10px; color: #007bff; text-decoration: none; }
         footer { font-style: italic; }
         .social-share { margin-top: 20px; }
         .social-share a { margin-right: 10px; }
+        figure { text-align: center; }
+        figcaption { font-size: 0.9em; color: #666; }
     </style>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const seoData = {
+                title: "Programmatically Generated Title - Improve Your SEO",
+                description: "A dynamically generated description of the page content with relevant keywords for SEO.",
+                keywords: "dynamic SEO, programmatic SEO, search engine optimization",
+                ogTitle: "Programmatically Generated Title - Improve Your SEO",
+                ogDescription: "A dynamically generated description of the page content with relevant keywords for SEO.",
+                twitterTitle: "Programmatically Generated Title - Improve Your SEO",
+                twitterDescription: "A dynamically generated description of the page content with relevant keywords for SEO.",
+                structuredData: {
+                    "@context": "https://schema.org",
+                    "@type": "Article",
+                    "headline": "Programmatically Generated Title - Improve Your SEO",
+                    "description": "A dynamically generated description of the post with relevant keywords for SEO.",
+                    "image": "https://images.unsplash.com/photo-1606787620429-1be9383799b5",
+                    "author": {
+                        "@type": "Person",
+                        "name": "John Doe"
+                    },
+                    "publisher": {
+                        "@type": "Organization",
+                        "name": "Example Company",
+                        "logo": {
+                            "@type": "ImageObject",
+                            "url": "https://images.unsplash.com/photo-1606787620429-1be9383799b5"
+                        }
+                    },
+                    "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": "https://www.example.com/post"
+                    }
+                }
+            };
+
+            // Update meta tags and structured data
+            document.getElementById('seo-title').innerText = seoData.title;
+            document.getElementById('seo-description').setAttribute('content', seoData.description);
+            document.getElementById('seo-keywords').setAttribute('content', seoData.keywords);
+            document.getElementById('og-title').setAttribute('content', seoData.ogTitle);
+            document.getElementById('og-description').setAttribute('content', seoData.ogDescription);
+            document.getElementById('twitter-title').setAttribute('content', seoData.twitterTitle);
+            document.getElementById('twitter-description').setAttribute('content', seoData.twitterDescription);
+
+            // Update structured data
+            document.getElementById('structured-data').innerText = JSON.stringify(seoData.structuredData);
+        });
+    </script>
 </head>
 <body>
     <header>
-        <h1>Short Title - Improve Your SEO</h1>
+        <h1 id="header-title">Short Title - Improve Your SEO</h1>
         <nav>
             <a href="https://www.example.com/home">Home</a>
             <a href="#content">Read More</a>
@@ -108,7 +158,7 @@
             <section>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor. For more information, visit <a href="https://www.wikipedia.org" target="_blank" rel="noopener noreferrer">Wikipedia</a>.</p>
                 <figure>
-                    <img src="https://source.unsplash.com/random/800x600" alt="Random image from Unsplash for better SEO.">
+                    <img src="https://images.unsplash.com/photo-1606787620429-1be9383799b5" alt="Random image from Unsplash for better SEO.">
                     <figcaption>Description of the image for better SEO.</figcaption>
                 </figure>
                 <amp-youtube
