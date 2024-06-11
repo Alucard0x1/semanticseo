@@ -15,7 +15,7 @@ This template incorporates essential SEO practices and modern web standards to e
 
 ## Preview
 
-![Semantic HTML Structure + SEO Onpage](https://raw.githubusercontent.com/Alucard0x1/semanticseo/main/Semantic%20HTML%20Structure%20%2B%20SEO%20Onpage..png)
+![Semantic HTML Structure + SEO Onpage]()
 
 ## Usage
 
