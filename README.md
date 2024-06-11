@@ -23,7 +23,10 @@ To use this template:
 1. Download or copy the HTML code.
 2. Replace the placeholder content (`https://www.example.com/post`, `Short Title - Improve Your SEO`, etc.) with your actual content.
 3. Modify the `<link rel="canonical">`, `<meta property="og:url">`, and social media URLs to reflect the URL of your published page.
-4. Upload the modified HTML file to your server.
+4. Replace the placeholder image URLs with your actual image URLs. For example, the images used in this template are from Unsplash:
+   - Main image: `https://images.unsplash.com/photo-1606787620429-1be9383799b5`
+   - Logo image: `https://images.unsplash.com/photo-1606787620429-1be9383799b5`
+5. Upload the modified HTML file to your server.
 
 ### Important
 Ensure that the server hosting your site is configured to serve AMP HTML pages correctly if you choose to use AMP elements.
@@ -40,6 +43,7 @@ This project is open-sourced under the MIT license. Feel free to modify, distrib
 ## Acknowledgments
 
 - Font Awesome for providing the icons used in the social media links.
+- Unsplash for providing the example images used in the template.
 - AMP project for the `amp-youtube` integration scripts.
 - All image and content rights belong to their respective owners. Example images and URLs provided in the template are for demonstration purposes only.
 
